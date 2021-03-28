@@ -11,4 +11,6 @@ compute1=$(($a*$b+$c))
 
 compute1=$(($c+$a/$b))
 
+compute1=$(($a%$b+$c))
+
 
