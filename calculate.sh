@@ -5,12 +5,23 @@ echo -n "Please enter three inputs":
 
 read a b c
 
-compute1=$(($a+$b*$c))
+declare -A result
 
-compute1=$(($a*$b+$c))
+function compute() {
+	local a=$1
+	local b=$2
+	local c=$3
 
-compute1=$(($c+$a/$b))
+	compute1=$(($a+$b*$c))
 
-compute1=$(($a%$b+$c))
+	compute2=$(($a*$b+$c))
 
+	compute3=$(($c+$a/$b))
 
+	compute4=$(($a%$b+$c))
+
+	echo $compute1 $compute2 $compute3 $compute4
+}
+i=0
+
+result="$( compute $a $b $c)"
