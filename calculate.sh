@@ -6,3 +6,7 @@ echo -n "Please enter three inputs":
 read a b c
 
 compute1=$(($a+$b*$c))
+
+compute1=$(($a*$b+$c))
+
+
