@@ -25,3 +25,5 @@ function compute() {
 i=0
 
 result="$( compute $a $b $c)"
+
+echo ${result[@]}
