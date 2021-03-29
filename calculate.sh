@@ -22,8 +22,9 @@ function compute() {
 
 	echo $compute1 $compute2 $compute3 $compute4
 }
-i=0
 
 result="$( compute $a $b $c)"
 
-echo ${result[@]}
+arr=($result)
+
+echo ${arr[@]}
